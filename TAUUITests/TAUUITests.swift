@@ -10,7 +10,12 @@ import XCTest
 
 class TAUUITests: BaseXCUITest {
     
-    func testExample() {
-        print("do nothing")
+    func testTapSomeUiElementsOnMainScreen() {
+        MainScreen.welcomeMessageLabel(app).tap()
+        MainScreen.enterCityLabel(app).tap()
+        MainScreen.entrollButton(app).tap()
+        MainScreen.enterCityBottomLabel(app).tap()
+        
+        XCTAssert(MainScreen.enterCityBottomLabel(app).exists)
     }
 }
