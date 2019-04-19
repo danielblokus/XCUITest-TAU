@@ -12,26 +12,26 @@ import XCTest
 class MainScreen {
     
     static func welcomeMessageLabel(_ app: XCUIApplication) -> XCUIElement {
-        return app.staticTexts[MainScreenUIIds.welcomeMessageLabelId].firstMatch
+        return app.staticTexts[MainScreenUiIds.welcomeMessageLabelId.rawValue].firstMatch
     }
     
     static func enterCityLabel(_ app: XCUIApplication) -> XCUIElement {
-        return app.staticTexts[MainScreenUIIds.enterCityLabelId].firstMatch
+        return app.staticTexts[MainScreenUiIds.enterCityLabelId.rawValue].firstMatch
     }
     
     static func entrollButton(_ app: XCUIApplication) -> XCUIElement {
-        return app.buttons[MainScreenUIIds.entrollButtonId].firstMatch
+        return app.buttons[MainScreenUiIds.entrollButtonId.rawValue].firstMatch
     }
     
     static func enterCityBottomLabel(_ app: XCUIApplication) -> XCUIElement {
-        return app.staticTexts[MainScreenUIIds.enterCityBottomLabelId].firstMatch
+        return app.staticTexts[MainScreenUiIds.enterCityBottomLabelId.rawValue].firstMatch
     }
 }
 
-struct MainScreenUIIds {
+enum MainScreenUiIds: String {
     
-    static let welcomeMessageLabelId = "welcomeMessage"
-    static let enterCityLabelId = "enterCity"
-    static let entrollButtonId = "enrollButton"
-    static let enterCityBottomLabelId = "Please Enter City"
+    case welcomeMessageLabelId = "welcomeMessage"
+    case enterCityLabelId = "enterCity"
+    case entrollButtonId = "enrollButton"
+    case enterCityBottomLabelId = "Please Enter City"
 }
