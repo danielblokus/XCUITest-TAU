@@ -11,7 +11,7 @@ import XCTest
 
 class BaseXCUITest: XCTestCase {
     
-    let app = XCUIApplication()
+    var app = XCUIApplication()
     
     override func setUp() {
         super.setUp()
