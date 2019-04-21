@@ -10,6 +10,7 @@
 		6B82F08F226510EC0012BE7A /* TAUUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B82F08E226510EC0012BE7A /* TAUUITests.swift */; };
 		6B82F097226511120012BE7A /* BaseXCUITest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B82F096226511120012BE7A /* BaseXCUITest.swift */; };
 		6B82F09A226511630012BE7A /* MainScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B82F099226511630012BE7A /* MainScreen.swift */; };
+		6BB0FCB5226C651C009AAE1D /* MainScreenElements.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BB0FCB4226C651C009AAE1D /* MainScreenElements.swift */; };
 		9B5BC70E220F55C20047CFA4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B5BC70D220F55C20047CFA4 /* AppDelegate.swift */; };
 		9B5BC710220F55C20047CFA4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B5BC70F220F55C20047CFA4 /* ViewController.swift */; };
 		9B5BC713220F55C20047CFA4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B5BC711220F55C20047CFA4 /* Main.storyboard */; };
@@ -41,6 +42,7 @@
 		6B82F090226510EC0012BE7A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6B82F096226511120012BE7A /* BaseXCUITest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseXCUITest.swift; sourceTree = "<group>"; };
 		6B82F099226511630012BE7A /* MainScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreen.swift; sourceTree = "<group>"; };
+		6BB0FCB4226C651C009AAE1D /* MainScreenElements.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenElements.swift; sourceTree = "<group>"; };
 		9B5BC70A220F55C20047CFA4 /* TAU.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TAU.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B5BC70D220F55C20047CFA4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9B5BC70F220F55C20047CFA4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -81,10 +83,10 @@
 		6B82F08D226510EC0012BE7A /* TAUUITests */ = {
 			isa = PBXGroup;
 			children = (
+				6BB0FCB2226C6374009AAE1D /* BaseTest */,
+				6BB0FCB1226C6364009AAE1D /* Tests */,
 				6B82F098226511560012BE7A /* Screens */,
-				6B82F08E226510EC0012BE7A /* TAUUITests.swift */,
 				6B82F090226510EC0012BE7A /* Info.plist */,
-				6B82F096226511120012BE7A /* BaseXCUITest.swift */,
 			);
 			path = TAUUITests;
 			sourceTree = "<group>";
@@ -92,9 +94,34 @@
 		6B82F098226511560012BE7A /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				6BB0FCB3226C64F2009AAE1D /* XCUIElements */,
 				6B82F099226511630012BE7A /* MainScreen.swift */,
 			);
 			path = Screens;
+			sourceTree = "<group>";
+		};
+		6BB0FCB1226C6364009AAE1D /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				6B82F08E226510EC0012BE7A /* TAUUITests.swift */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		6BB0FCB2226C6374009AAE1D /* BaseTest */ = {
+			isa = PBXGroup;
+			children = (
+				6B82F096226511120012BE7A /* BaseXCUITest.swift */,
+			);
+			path = BaseTest;
+			sourceTree = "<group>";
+		};
+		6BB0FCB3226C64F2009AAE1D /* XCUIElements */ = {
+			isa = PBXGroup;
+			children = (
+				6BB0FCB4226C651C009AAE1D /* MainScreenElements.swift */,
+			);
+			path = XCUIElements;
 			sourceTree = "<group>";
 		};
 		9B5BC701220F55C20047CFA4 = {
@@ -271,6 +298,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6B82F09A226511630012BE7A /* MainScreen.swift in Sources */,
+				6BB0FCB5226C651C009AAE1D /* MainScreenElements.swift in Sources */,
 				6B82F08F226510EC0012BE7A /* TAUUITests.swift in Sources */,
 				6B82F097226511120012BE7A /* BaseXCUITest.swift in Sources */,
 			);

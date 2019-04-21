@@ -11,27 +11,19 @@ import XCTest
 
 class MainScreen {
     
-    static func welcomeMessageLabel(_ app: XCUIApplication) -> XCUIElement {
-        return app.staticTexts[MainScreenUiIds.welcomeMessageLabelId.rawValue].firstMatch
+    static func tapWelcomeMessageLabel() {
+        MainScreenUiIds.welcomeMessageLabelId.element.firstMatch.tap()
     }
     
-    static func enterCityLabel(_ app: XCUIApplication) -> XCUIElement {
-        return app.staticTexts[MainScreenUiIds.enterCityLabelId.rawValue].firstMatch
+    static func tapEnterCityLabel() {
+        MainScreenUiIds.enterCityLabelId.element.firstMatch.tap()
     }
     
-    static func entrollButton(_ app: XCUIApplication) -> XCUIElement {
-        return app.buttons[MainScreenUiIds.entrollButtonId.rawValue].firstMatch
+    static func tapEntrollButton() {
+        MainScreenUiIds.entrollButtonId.element.firstMatch.tap()
     }
     
-    static func enterCityBottomLabel(_ app: XCUIApplication) -> XCUIElement {
-        return app.staticTexts[MainScreenUiIds.enterCityBottomLabelId.rawValue].firstMatch
+    static func tapEnterCityBottomLabel() {
+        MainScreenUiIds.enterCityBottomLabelId.element.firstMatch.tap()
     }
-}
-
-enum MainScreenUiIds: String {
-    
-    case welcomeMessageLabelId = "welcomeMessage"
-    case enterCityLabelId = "enterCity"
-    case entrollButtonId = "enrollButton"
-    case enterCityBottomLabelId = "Please Enter City"
 }

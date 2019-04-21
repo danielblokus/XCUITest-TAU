@@ -11,11 +11,11 @@ import XCTest
 class TAUUITests: BaseXCUITest {
     
     func testTapSomeUiElementsOnMainScreen() {
-        MainScreen.welcomeMessageLabel(app).tap()
-        MainScreen.enterCityLabel(app).tap()
-        MainScreen.entrollButton(app).tap()
-        MainScreen.enterCityBottomLabel(app).tap()
+        MainScreen.tapWelcomeMessageLabel()
+        MainScreen.tapEnterCityLabel()
+        MainScreen.tapEntrollButton()
+        MainScreen.tapEnterCityBottomLabel()
         
-        XCTAssert(MainScreen.enterCityBottomLabel(app).exists)
+        XCTAssert(MainScreenUiIds.enterCityBottomLabelId.element.exists)
     }
 }
