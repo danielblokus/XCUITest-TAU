@@ -7,4 +7,4 @@ before_install:
   - gem install fastlane --no-document --quiet
 install: true
 script:
-  - fastlane scan --scheme "TAU" --device "iPhone XR" --clean
+  - fastlane scan --scheme "TAU" --device "iPhone X" --clean --verbose
