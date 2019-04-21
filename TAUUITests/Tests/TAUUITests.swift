@@ -16,6 +16,8 @@ class TAUUITests: BaseXCUITest {
         MainScreen.tapEntrollButton()
         MainScreen.tapEnterCityBottomLabel()
         
+        
+        XCTAsyncAssert(MainScreenUiIds.enterCityLabelId.element, 2)
         XCTAssert(MainScreenUiIds.enterCityBottomLabelId.element.exists)
     }
 }

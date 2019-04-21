@@ -42,4 +42,11 @@ class BaseXCUITest: XCTestCase {
             activity.add(attachment)
         }
     }
+    
+    func XCTAsyncAssert(_ element: XCUIElement, _ forTimeout: TimeInterval = 10) {
+        let isElementExist = element.waitForExistence(timeout: forTimeout)
+        if isElementExist {
+            XCTAssertTrue(element.exists)
+        }
+    }
 }
