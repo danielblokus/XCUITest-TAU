@@ -1,0 +1,16 @@
+PODS:
+  - EyesXCUI (6.0.1)
+
+DEPENDENCIES:
+  - EyesXCUI
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - EyesXCUI
+
+SPEC CHECKSUMS:
+  EyesXCUI: 78f56c767bc4e4976aebeb15ac4280272dee03e4
+
+PODFILE CHECKSUM: dde9434b49803ee7503b4b7b85fb8709660c934d
+
+COCOAPODS: 1.6.1
