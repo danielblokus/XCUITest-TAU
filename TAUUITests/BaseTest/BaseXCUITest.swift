@@ -8,10 +8,12 @@
 
 import Foundation
 import XCTest
+import EyesXCUI
 
 class BaseXCUITest: XCTestCase {
     
     var app = XCUIApplication()
+    var eyes = Eyes()
     
     override func setUp() {
         super.setUp()
